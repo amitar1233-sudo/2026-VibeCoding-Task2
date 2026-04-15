@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    *, *::before, *::after {<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Chen · Frontend Developer 個人網站</title>
-  <meta name="description" content="這是一個前端工程師的個人品牌網站，包含自我介紹、技能整理、作品集展示與聯絡方式，讓訪客快速了解專業背景與開發能力。">
+  <title>Wei Lin · Frontend Developer 個人網站</title>
+  <meta name="description" content="這是一個前端工程師的個人品牌網站，用來介紹個人背景、技能專長、作品集與聯絡方式，讓訪客快速了解專業能力與開發經驗。">
 
   <style>
     /* CSS:BASE-START */
@@ -22,7 +16,7 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif;
       line-height: 1.6;
-      background-color: #0f172a;
+      background-color: #0b1220;
       color: #e5e7eb;
     }
 
@@ -63,28 +57,18 @@
       margin-bottom: 16px;
     }
 
-    footer {
-      margin-top: auto;
-      padding: 24px 0;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #9ca3af;
-      border-top: 1px solid #1f2937;
-    }
-
     .site-header {
       position: sticky;
       top: 0;
-      background-color: rgba(15, 23, 42, 0.9);
-      backdrop-filter: blur(8px);
+      background-color: rgba(11, 18, 32, 0.9);
       border-bottom: 1px solid #1f2937;
       z-index: 100;
     }
 
     .nav {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       height: 60px;
     }
 
@@ -100,22 +84,31 @@
     }
 
     .nav-link {
-      font-size: 0.9rem;
-      padding: 6px 8px;
+      padding: 6px 10px;
       border-radius: 6px;
+      font-size: 0.9rem;
     }
 
     .nav-link:hover {
       background-color: #1f2937;
     }
+
+    footer {
+      margin-top: auto;
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      border-top: 1px solid #1f2937;
+    }
     /* CSS:BASE-END */
 
     /* CSS:HERO-START */
     .section-hero {
-      background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+      background: linear-gradient(180deg, #0b1220 0%, #020617 100%);
     }
 
-    .hero-content {
+    .hero-wrapper {
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -139,7 +132,7 @@
 
     /* CSS:SKILLS-START */
     .section-skills {
-      background-color: #0f172a;
+      background-color: #0b1220;
     }
     /* CSS:SKILLS-END */
 
@@ -151,13 +144,13 @@
 
     /* CSS:CONTACT-START */
     .section-contact {
-      background-color: #0f172a;
+      background-color: #0b1220;
     }
     /* CSS:CONTACT-END */
 
     /* CSS:RWD-START */
     @media (min-width: 768px) {
-      .hero-content {
+      .hero-wrapper {
         flex-direction: row;
         align-items: center;
       }
@@ -178,7 +171,7 @@
 
     <header class="site-header">
       <div class="container nav">
-        <div class="nav-logo">Alex Chen · Frontend Dev</div>
+        <div class="nav-logo">Wei Lin · Frontend Dev</div>
         <nav class="nav-menu">
           <a href="#hero" class="nav-link">首頁</a>
           <a href="#about" class="nav-link">關於我</a>
@@ -193,18 +186,18 @@
 
       <!-- SECTION:HERO-START -->
       <section id="hero" class="section section-hero">
-        <div class="container hero-content">
+        <div class="container hero-wrapper">
           <div class="hero-text-block">
-            <h1 class="hero-title">這裡是個人網站的主視覺區（Hero Section 占位）</h1>
+            <h1 class="hero-title">這裡是個人網站的主視覺區（Hero 占位區）</h1>
             <p class="hero-text">
-              這裡未來會放一句話自我介紹、核心職稱（例如 Frontend Developer），以及引導使用者瀏覽作品集或聯絡方式的行動呼籲。
+              未來這裡會放一句話自我介紹、核心職稱（例如 Frontend Developer），以及引導使用者瀏覽作品集或聯絡方式的行動按鈕。
             </p>
             <p class="hero-text">
               之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把整個 section 貼回來取代這一區。
             </p>
           </div>
           <div class="hero-image">
-            <img src="https://source.unsplash.com/800x600/?developer,laptop" alt="在筆電前撰寫程式碼的前端開發者" loading="lazy">
+            <img src="https://source.unsplash.com/800x600/?programmer,workspace" alt="在桌前使用筆電開發網站的前端工程師" loading="lazy">
           </div>
         </div>
       </section>
@@ -214,12 +207,8 @@
       <section id="about" class="section section-about" aria-labelledby="about-heading">
         <div class="container">
           <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
-          <p>
-            這裡目前是 About 區的占位內容，未來會補上個人背景、經歷與專業定位等詳細介紹。
-          </p>
-          <p>
-            之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。
-          </p>
+          <p>這裡目前是 About 區的占位內容，未來會補上個人背景、經歷與職涯方向。</p>
+          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
         </div>
       </section>
       <!-- SECTION:ABOUT-END -->
@@ -228,12 +217,8 @@
       <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
         <div class="container">
           <h2 id="skills-heading" class="section-title">技能（之後會用 Section SDD 替換）</h2>
-          <p>
-            這裡目前是 Skills 區的占位內容，未來會列出前端技術、工具與開發能力。
-          </p>
-          <p>
-            之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。
-          </p>
+          <p>這裡目前是 Skills 區的占位內容，之後會整理前端技術、框架與工具。</p>
+          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
         </div>
       </section>
       <!-- SECTION:SKILLS-END -->
@@ -242,12 +227,8 @@
       <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
         <div class="container">
           <h2 id="projects-heading" class="section-title">作品集（之後會用 Section SDD 替換）</h2>
-          <p>
-            這裡目前是 Projects 區的占位內容，未來會展示實際開發的網站或應用專案。
-          </p>
-          <p>
-            之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。
-          </p>
+          <p>這裡目前是 Projects 區的占位內容，未來會展示實際開發專案與案例說明。</p>
+          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
         </div>
       </section>
       <!-- SECTION:PROJECTS-END -->
@@ -256,12 +237,8 @@
       <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
         <div class="container">
           <h2 id="contact-heading" class="section-title">聯絡我（之後會用 Section SDD 替換）</h2>
-          <p>
-            這裡目前是 Contact 區的占位內容，未來會放上 Email、GitHub、LinkedIn 等聯絡方式。
-          </p>
-          <p>
-            之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。
-          </p>
+          <p>這裡目前是 Contact 區的占位內容，未來會放上聯絡方式與社群連結。</p>
+          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
 
           <p>
             Email：<a href="mailto:hello@example.com">hello@example.com</a><br>
@@ -277,41 +254,10 @@
 
     <footer>
       <div class="container">
-        © 2026 Alex Chen · Frontend Developer. All rights reserved.
+        © 2026 Wei Lin · Frontend Developer. All rights reserved.
       </div>
     </footer>
 
   </div>
-</body>
-</html>
-       box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; max-width: 100%; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; line-height: 1.6; }
-    img { max-width: 100%; height: auto; display: block; }
-    .container { width: 1920px; margin: 0 auto; padding: 16px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .col-12 { grid-column: span 12; }
-    @media (min-width: 768px) { .col-md-6 { grid-column: span 6; } }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-  </style>
-</head>
-<body>
-  <header class="container" role="banner">
-    <nav aria-label="主選單">
-      <a href="#about">關於我</a>
-      <a href="#projects">作品集</a>
-      <a href="https://example.com/blog">技術部落格</a>
-      <a href="mailto:me@example.com">聯絡我</a>
-    </nav>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
-  </header>
-
-  <footer class="container" role="contentinfo">
-    <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
-    <img src="https://source.unsplash.com/600x200/?technology,abstract" alt="">
-  </footer>
 </body>
 </html>
