@@ -128,6 +128,54 @@
     .section-about {
       background-color: #020617;
     }
+
+    .about-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-list {
+      padding-left: 20px;
+    }
+
+    .about-list li {
+      margin-bottom: 8px;
+    }
+
+    .about-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background-color: #22d3ee;
+      color: #020617;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid #22d3ee;
+      color: #22d3ee;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
     /* CSS:ABOUT-END */
 
     /* CSS:SKILLS-START */
@@ -160,6 +208,19 @@
       }
 
       .hero-image {
+        flex: 1;
+      }
+
+      .about-wrapper {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-image {
         flex: 1;
       }
     }
@@ -205,10 +266,35 @@
 
       <!-- SECTION:ABOUT-START -->
       <section id="about" class="section section-about" aria-labelledby="about-heading">
-        <div class="container">
-          <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 About 區的占位內容，未來會補上個人背景、經歷與職涯方向。</p>
-          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+        <div class="container about-wrapper">
+
+          <div class="about-text">
+            <h2 id="about-heading" class="section-title">關於我</h2>
+
+            <p>
+              我目前是一名前端工程師，專注於網站開發與介面設計，主要使用 HTML、CSS 等技術打造清晰且易用的使用者體驗。
+            </p>
+
+            <p>
+              我重視溝通與理解需求，習慣把複雜的問題拆解清楚，也喜歡分享與教學，讓團隊合作更順暢、成果更穩定。
+            </p>
+
+            <ul class="about-list">
+              <li>能將設計稿精準轉換為高品質網頁</li>
+              <li>擅長打造響應式（RWD）與跨裝置體驗</li>
+              <li>善於與設計師與客戶溝通需求並落地實作</li>
+            </ul>
+
+            <div class="about-actions">
+              <a href="#projects" class="btn">查看作品集</a>
+              <a href="#contact" class="btn btn-secondary">聯絡我</a>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="https://source.unsplash.com/800x600/?software,developer" alt="工程師專注撰寫程式碼的工作情境" loading="lazy">
+          </div>
+
         </div>
       </section>
       <!-- SECTION:ABOUT-END -->
