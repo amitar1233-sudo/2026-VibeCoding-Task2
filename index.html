@@ -149,7 +149,8 @@
       margin-bottom: 8px;
     }
 
-    .about-actions {
+    .about-actions,
+    .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
@@ -232,7 +233,7 @@
 
     <header class="site-header">
       <div class="container nav">
-        <div class="nav-logo">yourname.Amitar Huang</div>
+        <div class="nav-logo">Your Name.Amitar Huang</div>
         <nav class="nav-menu">
           <a href="#hero" class="nav-link">首頁</a>
           <a href="#about" class="nav-link">關於我</a>
@@ -249,13 +250,14 @@
       <section id="hero" class="section section-hero">
         <div class="container hero-wrapper">
           <div class="hero-text-block">
-            <h1 class="hero-title">這裡是個人網站的主視覺區（Hero 占位區）</h1>
+            <h1 class="hero-title">這裡是個人網站的主視覺區（Hero）</h1>
             <p class="hero-text">
               歡迎來到我的作品與簡介頁面。此為網站骨架階段的占位區塊,未來會放上簡短自我介紹、主職稱與行動呼籲(例如:瀏覽作品集或下載履歷)。
             </p>
-            <p class="hero-text">
-              之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把整個 section 貼回來取代這一區。
-            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn">查看作品集</a>
+              <a href="mailto:hello@example.com" class="btn btn-secondary">下載履歷 (Email)</a>
+            </div>
           </div>
           <div class="hero-image">
             <img src="https://source.unsplash.com/800x600/?programmer,workspace" alt="在桌前使用筆電開發網站的前端工程師" loading="lazy">
@@ -302,9 +304,8 @@
       <!-- SECTION:SKILLS-START -->
       <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
         <div class="container">
-          <h2 id="skills-heading" class="section-title">技能（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Skills 區的占位內容，之後會整理前端技術、框架與工具。</p>
-          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="skills-heading" class="section-title">技能</h2>
+          <p>我擅長以 HTML、CSS、JavaScript 進行介面開發，並熟悉響應式設計、元件化佈局與跨瀏覽器支援。能靈活運用 SASS、Git 版本控制與工具流程，快速轉換設計稿、優化使用者互動與維持乾淨可維護的前端程式碼。</p>
         </div>
       </section>
       <!-- SECTION:SKILLS-END -->
@@ -312,9 +313,8 @@
       <!-- SECTION:PROJECTS-START -->
       <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
         <div class="container">
-          <h2 id="projects-heading" class="section-title">作品集（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Projects 區的占位內容，未來會展示實際開發專案與案例說明。</p>
-          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="projects-heading" class="section-title">作品集</h2>
+          <p>我的作品集展示多個前端專案，從響應式網站、互動式介面到效能優化皆有實作。每個案例都強調設計細節、使用者體驗與跨裝置兼容，並結合 CSS、JavaScript 與框架開發技巧，呈現穩定、易維護與可讀性佳的網頁成果。</p>
         </div>
       </section>
       <!-- SECTION:PROJECTS-END -->
@@ -322,9 +322,8 @@
       <!-- SECTION:CONTACT-START -->
       <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
         <div class="container">
-          <h2 id="contact-heading" class="section-title">聯絡我（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Contact 區的占位內容，未來會放上聯絡方式與社群連結。</p>
-          <p>之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="contact-heading" class="section-title">聯絡我</h2>
+          <p>如果你對我的前端專案、作品集或合作機會有興趣，歡迎隨時聯繫我。我擅長快速回應需求，並期待與你討論設計、開發流程與專案執行細節，讓每個網頁方案都能兼具美觀與可用性。</p>
 
           <p>
             Email：<a href="mailto:hello@example.com">hello@example.com</a><br>
